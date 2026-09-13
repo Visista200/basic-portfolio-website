@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 0 1rem;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.highlight {
+    color: #2563eb;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.primary-btn {
+    background-color: #2563eb;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.secondary-btn {
+    background-color: #fff;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+.secondary-btn:hover {
+    background-color: #eff6ff;
+}
+
+/* Common Section Styling */
+.section {
+    padding: 5rem 10%;
+}
+
+.bg-light {
+    background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #1f2937;
+}
+
+/* About Section */
+.about-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.skills-list span {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Experience Timeline */
+.timeline {
+    max-width: 600px;
+    margin: 0 auto;
+    border-left: 3px solid #2563eb;
+    padding-left: 1.5rem;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-item h3 {
+    font-size: 1.2rem;
+    color: #1f2937;
+}
+
+.timeline-item .date {
+    font-size: 0.85rem;
+    color: #6b7280;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.project-info p {
+    color: #4b5563;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+/* Contact & Social Links */
+.contact-subtitle {
+    text-align: center;
+    color: #4b5563;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.social-icons a {
+    color: #4b5563;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #2563eb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #1f2937;
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Can be expanded with JS mobile drawer */
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
